@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Saira+Condensed&display=swap');
+
 * {
     padding: 0;
     margin: 0
@@ -13,6 +15,16 @@ button {
     border: none;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #575A6B;
+    width: 100%;
+}
+
 img {
     width: 300px;
     height: 300px;
@@ -20,18 +32,24 @@ img {
     border: 5px solid white;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    background-color: bisque;
-    width: 100%;
+.imgBox {
+    padding: 50px
 }
 
-.imgBox {
-    padding: 100px
+h1 {
+    position: absolute;
+    margin-bottom: 80vh;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 4em;
+    color: #001747;
+}
+
+h2, h3 {
+    font-size: 2em;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #E59E6D;
 }
 
 .vote {
@@ -41,8 +59,9 @@ img {
 
 .votebtn {
     padding: 10px;
-    margin: 30px 20px;
+    margin: 20px 15px;
     cursor: pointer;
     background-color: aquamarine;
     border: none;
 }
+

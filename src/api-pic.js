@@ -22,27 +22,28 @@ const GetPics= () => {
   return (
     
     <div className='container'>
+            <h1>Cats & Dogs API</h1>
       <div className="imgBox">
-      <h1>Random Catto Pics</h1><br></br>
-      <img src={fetchCat} alt="cat"></img>
-      <br></br>
-      <br></br>
-      <button onClick={() => getCatPic()}>Fetch More Cats!</button>
+            <h2>Random Catto Pics</h2><br></br>
+        <img src={fetchCat} alt="cat"></img>
+            <br></br>
+            <br></br>
+        <button onClick={() => getCatPic()}>Fetch More Cats!</button>
       </div>
 
       <div className="imgBox">
-      <h1>Random Doggo Pics</h1><br></br>
-      <img src={fetchDog} alt="dog"></img>
-      <br></br>
-      <br></br>
-      <button onClick={() => getDogPic()}>Fetch More Dogs!</button>
+            <h2>Random Doggo Pics</h2><br></br>
+        <img src={fetchDog} alt="dog"></img>
+            <br></br>
+            <br></br>
+        <button onClick={() => getDogPic()}>Fetch More Dogs!</button>
       </div>
      
       <div className="vote">
-      <h3>Which pet do you like more?</h3>
-      <button className="votebtn" onClick={() => setVoteCat(voteCat + 1)}>Catto - {voteCat} votes</button>
-      <button className="votebtn" onClick={() => setVoteDog(voteDog + 1)}>Doggo - {voteDog} votes</button>
-      <button className="votebtn" onClick={() => setVoteBoth(voteBoth + 1)}>Both - {voteBoth} votes</button>
+            <h3>Which pet do you like more?</h3>
+        <button className="votebtn" onClick={() => setVoteCat(voteCat + 1)}>Catto - {voteCat} votes</button>
+        <button className="votebtn" onClick={() => setVoteDog(voteDog + 1)}>Doggo - {voteDog} votes</button>
+        <button className="votebtn" onClick={() => setVoteBoth(voteBoth + 1)}>Both - {voteBoth} votes</button>
       </div>
     </div>
   )
